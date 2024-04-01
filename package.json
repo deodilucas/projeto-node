@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/deodilucas/projeto-node/issues"
   },
-  "homepage": "https://github.com/deodilucas/projeto-node#readme"
+  "homepage": "https://github.com/deodilucas/projeto-node#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
