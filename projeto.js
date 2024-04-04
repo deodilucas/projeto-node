@@ -23,6 +23,18 @@ app.get('/pag3', (req, resp)=>{
 
 //#########################################################
 
+app.post('/login', (req, resp)=>{
+    let nome = String(req.body.nome);
+    let senha = String(req.body.senha);
+
+    if(nome === 'user' && senha === 'senha'){
+        alert("Acesso Concedido!")
+    }
+    else{
+        alert("Usuário ou senha inválidos!")
+    }
+});
+
 app.post('/pagina1', (req, res)=>{
     
 });
