@@ -9,15 +9,15 @@ app.get('/login', (req, resp)=>{
 });
 
 app.get('/pag1', (req, resp)=>{
-    resp.sendFile(__dirname + 'Pagina1.html')
+    resp.sendFile(__dirname + '/pagina1.html')
 });
 
 app.get('/pag2', (req, resp)=>{
-    resp.sendFile(__dirname + 'Pagina2.html')
+    resp.sendFile(__dirname + '/pagina2.html')
 });
 
 app.get('/pag3', (req, resp)=>{
-    resp.sendFile(__dirname + 'Pagina3.html')
+    resp.sendFile(__dirname + '/pagina3.html')
 });
 
 
