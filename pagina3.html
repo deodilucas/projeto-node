@@ -54,6 +54,31 @@
             justify-content: center;
         }
 
+        h1 {
+            font-family: "Bitter", serif;
+            margin: 1em;
+        }
+
+        form input {
+            height: 2.5em;
+            width: 250px;
+            margin: 0.5em;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: #6a71f3;
+            border: none;
+            border-radius: 0.3em;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transition: ease-in 100ms;
+            background-color: #5b61d3;
+        }
+
         /*bot*/
         .content-bot {
             background-color: black;
@@ -81,8 +106,22 @@
             </nav>
         </div>
     </section>
-    <section class="content-mid"></section>
-    <section class="content-bot"></section>
+    <section class="content-mid">
+        <h1>Contatos</h1>
+        <form action="" method="post">
+            <input type="text" name="nome" placeholder="Digite seu nome"> <br>
+            <input type="number" name="numero" placeholder="(00) 912345678"> <br>
+            <input type="email" name="email" placeholder="@email.com"> <br>
+            <input type="button" value="Enviar" class="btn">
+        </form>
+    </section>
+    <section class="content-bot">
+        <div class="deo">
+            Deodilucas Souza da Silva<br>
+            RGM: 28143329
+        </div>
+        <div class="gus"></div>
+    </section>
 </body>
 
 </html>
