@@ -1,4 +1,5 @@
 const express = require('express');
+const { lazyrouter } = require('express/lib/application');
 
 const app = express();
 
@@ -27,11 +28,12 @@ app.post('/login', (req, resp)=>{
     let nome = String(req.body.nome);
     let senha = String(req.body.senha);
 
-    if(nome === 'user' && senha === 'senha'){
-        alert("Acesso Concedido!")
+    if(nome === 'nome' && senha === 'senha'){
+        let sup = resp.json("Acesso Concedido");
+        sup.then(setTimeout(resp.sendFile(__dirname + '/pagina1.html'), 1000));
     }
     else{
-        alert("Usuário ou senha inválidos!")
+        resp.json("Acesso Negado");
     }
 });
 
